@@ -79,7 +79,10 @@ fun solution(A: IntArray): Int {
     return r
 }
 
-Solution 3 (Java) 
+Solution 3 (Java) (100%)
+import java.util.Map;
+import java.util.HashMap;
+
 class Solution {
     public int solution(int[] A) {
         // write your code in Java SE 8
