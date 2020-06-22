@@ -61,3 +61,20 @@ fun main() {
     }
     println(r)
 }
+
+Solution 2 (Kotlin)
+
+fun solution(A: IntArray): Int {
+    // write your code in Kotlin
+    A.sort()
+    var r = 1
+    var i = 0
+    while(i < A.size-1) {
+        if((A[i]+1) != A[i+1]) {
+           r = 0
+           break 
+        }
+        i++
+    }
+    return r
+}
