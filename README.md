@@ -62,7 +62,7 @@ fun main() {
     println(r)
 }
 
-Solution 2 (Kotlin)
+Solution 2 (Kotlin) 66%
 
 fun solution(A: IntArray): Int {
     // write your code in Kotlin
@@ -78,3 +78,21 @@ fun solution(A: IntArray): Int {
     }
     return r
 }
+
+Solution 3 (Java) 
+class Solution {
+    public int solution(int[] A) {
+        // write your code in Java SE 8
+        int arrLen = A.length;
+        Map<Integer,Integer> m = new HashMap<>();
+        
+        for(int ctr=arrLen; ctr > 0; ctr--)
+            m.put(ctr,1);
+        
+        for(int a : A)
+            if(m.containsKey(a))
+                m.remove(a);
+        return (m.size() == 0) ? 1 : 0;
+    }
+}
+
