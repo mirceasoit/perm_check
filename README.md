@@ -21,7 +21,7 @@ The goal is to check whether array A is a permutation.
 
 Write a function:
 
-fun solution(A: IntArray): Int
+```fun solution(A: IntArray): Int```
 
 that, given an array A, returns 1 if array A is a permutation and 0 if it is not.
 
@@ -46,6 +46,7 @@ N is an integer within the range [1..100,000];
 each element of array A is an integer within the range [1..1,000,000,000].
 
 Solution 1 (Kotlin):
+```
 fun main() {
     //val A: IntArray = intArrayOf(4,1,3,2)
     val A: IntArray = intArrayOf(4,1,3)
@@ -61,9 +62,11 @@ fun main() {
     }
     println(r)
 }
+```
 
 Solution 2 (Kotlin) 66%
 
+```
 fun solution(A: IntArray): Int {
     // write your code in Kotlin
     A.sort()
@@ -78,8 +81,11 @@ fun solution(A: IntArray): Int {
     }
     return r
 }
+```
 
 Solution 3 (Java) (100%)
+
+```
 import java.util.Map;
 import java.util.HashMap;
 
@@ -98,4 +104,5 @@ class Solution {
         return (m.size() == 0) ? 1 : 0;
     }
 }
+```
 
